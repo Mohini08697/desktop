@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNo</title>
+
+</head>
+
+<body>
+    <h1>This is a prime no</h1>
+    <script>
+        document.write(prime(99))
+
+        function prime(num) {
+            if(num<2)
+            {
+                return false;
+            }
+            var num;
+            for (var i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    document.write("this is a not prime number:", +num)
+                    return false;
+
+                }
+               
+            }
+            document.write("this is  prime no:", +num)
+                return true;
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
